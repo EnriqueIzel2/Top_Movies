@@ -10,6 +10,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
 import com.enriqueizel.topmovies.Model.Movie;
 import com.enriqueizel.topmovies.R;
 
@@ -36,7 +37,7 @@ public class AdapterMovie extends RecyclerView.Adapter<AdapterMovie.MovieViewHol
 
   @Override
   public void onBindViewHolder(@NonNull MovieViewHolder holder, int position) {
-    holder.cover.setImageResource(movieList.get(position).getCover());
+    Glide.with(context).load(movieList.get(position).getCover()).into(holder.cover);
     holder.title.setText(movieList.get(position).getTitle());
   }
 
