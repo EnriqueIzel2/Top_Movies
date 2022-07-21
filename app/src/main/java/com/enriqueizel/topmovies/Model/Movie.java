@@ -2,15 +2,10 @@ package com.enriqueizel.topmovies.Model;
 
 public class Movie {
   private String title;
-  private int cover;
+  private String cover;
   private String description;
   private String cast;
   private String video;
-
-  public Movie(int cover, String title) {
-    this.title = title;
-    this.cover = cover;
-  }
 
   public String getTitle() {
     return title;
@@ -20,11 +15,11 @@ public class Movie {
     this.title = title;
   }
 
-  public int getCover() {
+  public String getCover() {
     return cover;
   }
 
-  public void setCover(int cover) {
+  public void setCover(String cover) {
     this.cover = cover;
   }
 
