@@ -8,11 +8,20 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.enriqueizel.topmovies.Model.Movie;
 import com.enriqueizel.topmovies.R;
+
+import java.util.List;
 
 public class AdapterMovie extends RecyclerView.Adapter<AdapterMovie.MovieViewHolder> {
 
   private Context context;
+  private List<Movie> movieList;
+
+  public AdapterMovie(Context context, List<Movie> movieList) {
+    this.context = context;
+    this.movieList = movieList;
+  }
 
   @NonNull
   @Override
