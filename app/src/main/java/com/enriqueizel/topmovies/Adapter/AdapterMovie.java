@@ -4,6 +4,8 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -44,8 +46,13 @@ public class AdapterMovie extends RecyclerView.Adapter<AdapterMovie.MovieViewHol
 
   public class MovieViewHolder extends RecyclerView.ViewHolder {
 
+    private ImageView cover;
+    private TextView title;
+
     public MovieViewHolder(@NonNull View itemView) {
       super(itemView);
+      cover = itemView.findViewById(R.id.item_movie_cover);
+      title = itemView.findViewById(R.id.item_movie_title);
     }
   }
 }
