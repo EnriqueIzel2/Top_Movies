@@ -1,42 +1,42 @@
 package com.enriqueizel.topmovies.Model;
 
 public class Movie {
-  private String title;
-  private String cover;
-  private String description;
-  private String cast;
+  private String titulo;
+  private String capa;
+  private String descricao;
+  private String elenco;
   private String video;
 
   public String getTitle() {
-    return title;
+    return titulo;
   }
 
-  public void setTitle(String title) {
-    this.title = title;
+  public void setTitle(String titulo) {
+    this.titulo = titulo;
   }
 
   public String getCover() {
-    return cover;
+    return capa;
   }
 
-  public void setCover(String cover) {
-    this.cover = cover;
+  public void setCover(String capa) {
+    this.capa = capa;
   }
 
   public String getDescription() {
-    return description;
+    return descricao;
   }
 
-  public void setDescription(String description) {
-    this.description = description;
+  public void setDescription(String descricao) {
+    this.descricao = descricao;
   }
 
   public String getCast() {
-    return cast;
+    return elenco;
   }
 
-  public void setCast(String cast) {
-    this.cast = cast;
+  public void setCast(String elenco) {
+    this.elenco = elenco;
   }
 
   public String getVideo() {
