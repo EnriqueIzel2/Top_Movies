@@ -3,7 +3,9 @@ package com.enriqueizel.topmovies;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -35,6 +37,15 @@ public class MovieDetailsActivity extends AppCompatActivity {
     detailsCast.setText(cast);
 
     detailsToolbar.setNavigationOnClickListener(view -> finish());
+
+    detailsPlayVideo.setOnClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View view) {
+        Intent intent = new Intent(getApplicationContext(), VideoActivity.class);
+        intent.putExtra("video", video);
+        startActivity(intent);
+      }
+    });
   }
 
   private void getComponentsID() {
