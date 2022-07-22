@@ -7,6 +7,7 @@ import android.widget.VideoView;
 
 public class VideoActivity extends AppCompatActivity {
 
+  private VideoView videoView;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -14,5 +15,7 @@ public class VideoActivity extends AppCompatActivity {
     setContentView(R.layout.activity_video);
     getSupportActionBar().hide();
 
+    videoView = findViewById(R.id.video_playing);
+    String video = getIntent().getExtras().getString("video");
   }
 }
