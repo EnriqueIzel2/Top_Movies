@@ -17,6 +17,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_play_video"
+        app:layout_constraintBottom_toBottomOf="@id/details_cover"
+        app:layout_constraintEnd_toEndOf="@id/details_cover"
+        app:layout_constraintStart_toStartOf="@id/details_cover"
+        app:layout_constraintTop_toTopOf="@id/details_cover" />
+
     <TextView
         android:id="@+id/details_title"
         android:layout_width="wrap_content"
