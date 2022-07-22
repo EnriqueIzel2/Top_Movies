@@ -5,11 +5,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 
 import com.enriqueizel.topmovies.Adapter.AdapterMovie;
 import com.enriqueizel.topmovies.Model.Movie;
 import com.enriqueizel.topmovies.Model.MovieApi;
+import com.enriqueizel.topmovies.OnClickItem.RecyclerItemClickListener;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -34,6 +38,29 @@ public class MainActivity extends AppCompatActivity {
 
     getComponentsID();
     movieList = new ArrayList<>();
+
+//    Eventos de click no item
+    recyclerViewMovies.addOnItemTouchListener(new RecyclerItemClickListener(
+            getApplicationContext(),
+            recyclerViewMovies,
+            new RecyclerItemClickListener.OnItemClickListener() {
+              @Override
+              public void onItemClick(View view, int position) {
+                Intent intent = new Intent(getApplicationContext(), MovieDetailsActivity.class);
+                startActivity(intent);
+              }
+
+              @Override
+              public void onLongItemClick(View view, int position) {
+
+              }
+
+              @Override
+              public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+
+              }
+            }
+    ));
 
 //    configura a retrofit
     Retrofit retrofit = new Retrofit.Builder()
