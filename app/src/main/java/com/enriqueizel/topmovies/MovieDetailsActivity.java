@@ -33,6 +33,8 @@ public class MovieDetailsActivity extends AppCompatActivity {
     detailsTitle.setText(title);
     detailsDescription.setText(description);
     detailsCast.setText(cast);
+
+    detailsToolbar.setNavigationOnClickListener(view -> finish());
   }
 
   private void getComponentsID() {
