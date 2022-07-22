@@ -23,6 +23,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
+            android:id="@+id/details_play_video"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:src="@drawable/ic_play_video"
