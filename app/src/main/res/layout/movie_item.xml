@@ -24,9 +24,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Titanic"
+            android:text=""
             android:textColor="@color/black"
-            android:textSize="20sp"
+            android:textSize="18sp"
+            android:textAlignment="center"
             android:textStyle="bold" />
     </LinearLayout>
 </androidx.cardview.widget.CardView>
