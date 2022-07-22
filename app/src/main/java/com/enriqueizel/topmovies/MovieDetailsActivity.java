@@ -1,6 +1,7 @@
 package com.enriqueizel.topmovies;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.os.Bundle;
 import android.widget.ImageView;
@@ -12,6 +13,7 @@ public class MovieDetailsActivity extends AppCompatActivity {
 
   private ImageView detailsCover, detailsPlayVideo;
   private TextView detailsTitle, detailsDescription, detailsCast;
+  private Toolbar detailsToolbar;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -39,5 +41,6 @@ public class MovieDetailsActivity extends AppCompatActivity {
     detailsTitle = findViewById(R.id.details_title);
     detailsDescription = findViewById(R.id.details_description);
     detailsCast = findViewById(R.id.details_cast);
+    detailsToolbar = findViewById(R.id.details_toolbar);
   }
 }
