@@ -47,6 +47,11 @@ public class MainActivity extends AppCompatActivity {
               @Override
               public void onItemClick(View view, int position) {
                 Intent intent = new Intent(getApplicationContext(), MovieDetailsActivity.class);
+                intent.putExtra("cover", movieList.get(position).getCover());
+                intent.putExtra("title", movieList.get(position).getTitle());
+                intent.putExtra("description", movieList.get(position).getDescription());
+                intent.putExtra("cast", movieList.get(position).getCast());
+                intent.putExtra("video", movieList.get(position).getVideo());
                 startActivity(intent);
               }
 
