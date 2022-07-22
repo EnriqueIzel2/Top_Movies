@@ -83,7 +83,6 @@ public class MainActivity extends AppCompatActivity {
         }
 
         List<Movie> movies = response.body();
-        System.out.println("aqui é o response " + response.body().get(1).getVideo());
 
         for (Movie movie : movies) {
           movieList.add(movie);
