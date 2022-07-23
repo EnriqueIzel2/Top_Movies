@@ -19,7 +19,7 @@
 <h2 id="demonstracao">📽️ Demonstração</h2>
 
 <p align="center">
-  <img src="https://media.giphy.com/media/RgqEN8WrvwhHkhLg2U/giphy-downsized-large.gif" />
+  <img src="https://media.giphy.com/media/HgmVmPurLAI6vKkIH9/giphy.gif" />
 </p>
 
 ---
